@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.clear {
+  clear: both;
+}
+
+
+.navbar .nav-item {
+  padding : 8px;
+  list-style: none;
+}
+
+.logo a,
+.nav-item a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar-nav .btn-header {
+  background-color: #fd4c82;
+  border-radius: 5%;
+}
+
+i {
+  color: black;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* height: 100%; */
+  background: url(../img/bg_home.jpg) top center / cover no-repeat;
+  z-index: 1; /* Đảm bảo overlay hiển thị trên phần tử bên trong header */
+  opacity: 0.9; 
+  padding-top: 50%;
+}
+.intro-section,
+.main-slider,
+header,
+.banner,
+.header {
+  position: relative;
+  z-index: 2; /* Đảm bảo nội dung hiển thị phía trên overlay */
+}
+
+.nav-bar .btn-search:hover{
+  border: 1px solid #ccc;
+}
+
+.slider-text h1 {
+  font-size: 70px;
+  /* color: #000000; */
+  line-height: 1;
+  font-weight: 700;
+}
+
