@@ -3,22 +3,23 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-.clear {
-  clear: both;
+  font-size: 13px;
+  line-height: 1.5;
 }
 
 
 .navbar .nav-item {
-  padding : 8px;
+  /* padding: 8px; */
   list-style: none;
 }
 
-.logo a,
-.nav-item a {
-  text-decoration: none;
-  color: black;
+.main-overlay .row {
+  height: 521px;
+}
+
+.content {
+  max-width: 1100px;
+  margin: auto;
 }
 
 .navbar-nav .btn-header {
@@ -26,37 +27,138 @@
   border-radius: 5%;
 }
 
+.groomer-card h6,
+.appointment-form h6,
+.welcome-section .sub-heading,
 i {
-  color: black;
-}
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  /* height: 100%; */
-  background: url(../img/bg_home.jpg) top center / cover no-repeat;
-  z-index: 1; /* Đảm bảo overlay hiển thị trên phần tử bên trong header */
-  opacity: 0.9; 
-  padding-top: 50%;
-}
-.intro-section,
-.main-slider,
-header,
-.banner,
-.header {
-  position: relative;
-  z-index: 2; /* Đảm bảo nội dung hiển thị phía trên overlay */
+  color: rgb(230, 37, 172);
 }
 
-.nav-bar .btn-search:hover{
+
+.nav-bar .btn-search:hover {
   border: 1px solid #ccc;
 }
 
 .slider-text h1 {
-  font-size: 70px;
+  font-size: 50px;
   /* color: #000000; */
   line-height: 1;
   font-weight: 700;
 }
 
+.header .overlay {
+  background: url(../img/bg_home.jpg) top center / cover no-repeat;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 50%;
+  height: 100%;
+  width: 100%;
+}
+
+.main-overlay,
+.banner,
+.navs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.navs {
+  margin-top: 46px;
+}
+
+.main-overlay {
+  margin-top: 10%;
+}
+
+.intro-section {
+  margin-bottom: 120px;
+}
+
+.intro-section .card {
+  width: 350px;
+  height: 150px;
+  margin-top: -75px;
+}
+
+
+.welcome-section span,
+.groomer-card .card:hover,
+.intro-section .card:hover {
+  background-color: #fd4c82;
+}
+
+.welcome-section img {
+  width: 446px;
+  height: 520px;
+}
+
+.groomer-card .card {
+  margin-top: 150px;
+  width: 285px;
+}
+
+.groomer-card .card-body {
+  padding-top: 30%;
+}
+
+.groomer-card .card img {
+  background-color: #ccc;
+  width: 145px;
+  margin-top: -75px;
+  right: 0;
+  left: 0;
+  top: 0;
+  margin-left: 60px;
+}
+
+
+
+.groomer-card .list-card-icons i {
+  background-color: #4cfdd7;
+}
+
+
+.slider-primary {
+  background: url(../img/slider.jpg) top center / cover no-repeat;
+  padding-top: 40%;
+  position: relative;
+}
+
+
+.slider-primary .overlay {
+  background: #fd4c82;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: '';
+  opacity: .7;
+
+}
+.slider-primary  .carousel-inner {
+  padding-bottom: 100px;
+}
+
+.slider-primary .slider-content {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+.carousel-control-next,
+.carousel-control-prev{
+  margin-top: 100px;
+}
+
+.footer,
+.footer .list-group-item-mine{
+  border: 0;
+  background: #e0e0e0;
+}
